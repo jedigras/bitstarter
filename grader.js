@@ -86,11 +86,11 @@ if(require.main == module) {
         .parse(process.argv);
 
     if (program.url) {
-	console.log("Processing URL");
+//	console.log("Processing URL");
         var checkJson = checkUrl(program.url, program.checks);
         var outJson = JSON.stringify(checkJson, null, 4);
     } else if (program.file) {
-	console.log("Processing File");
+//	console.log("Processing File");
         var checkJson = checkHtmlFile(program.file, program.checks);
         var outJson = JSON.stringify(checkJson, null, 4);
     }
